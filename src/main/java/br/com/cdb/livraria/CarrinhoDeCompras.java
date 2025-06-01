@@ -8,11 +8,16 @@ public class CarrinhoDeCompras {
         // Verifica se o livro já está no carrinho
         livros.add(livro);
     }
+
     ArrayList<Livro> livros = new ArrayList<Livro>();
-    public void calcularTotal(){
+
+    public double calcularTotal() {
+        // Calcula o total do carrinho
         double total = 0;
-        for (Livro livro: livros){
+        for (Livro livro : livros) {
             total += livro.calcularPrecoTota();
         }
+
+        return total;
     }
 }

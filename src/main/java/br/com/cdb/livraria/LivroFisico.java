@@ -27,13 +27,14 @@ public class LivroFisico extends Livro {
     }
 
     // SOBRESCRITA DE MÉTODO
-    
+
 
     @Override
     public double calcularPrecoTota() {
         // Método abstrato herdado da classe Livro, implementado aqui para satisfazer a
         // assinatura do método
         return getPreco() + frete; // Substitua por sua lógica de cálculo, se necessário
-        
+
     }
+
 }

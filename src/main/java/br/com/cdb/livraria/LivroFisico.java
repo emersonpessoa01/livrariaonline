@@ -25,9 +25,15 @@ public class LivroFisico extends Livro {
     public void setFrete(double frete) {
         this.frete = frete;
     }
-    //SOBRESCRITA DE MÉTODO
+
+    // SOBRESCRITA DE MÉTODO
+    
+
     @Override
-    public double calcularPrecoTotal() {
-        return super.calcularPrecoTotal() + this.frete;
+    public double calcularPrecoTota() {
+        // Método abstrato herdado da classe Livro, implementado aqui para satisfazer a
+        // assinatura do método
+        return getPreco() + frete; // Substitua por sua lógica de cálculo, se necessário
+        
     }
 }

@@ -1,6 +1,6 @@
 package br.com.cdb.livraria;
 
-public class Livro {
+public abstract class Livro {
     private String titulo;
     private String autor;
     private String isbn;
@@ -48,8 +48,6 @@ public class Livro {
         this.preco = preco;
     }
 
-    public double calcularPrecoTotal() {
-        return this.preco;
-    }
+    public abstract double calcularPrecoTota();
 
 }
